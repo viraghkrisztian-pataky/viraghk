@@ -10,15 +10,14 @@
 .myrbt {
     float: left;
     clear: none;
-    margin: 2px 0 0 2px;
+    margin: 0 10px;
     transform: scale(2);
-    width: 30%;
+
 }
 .rbtlabel {
     float: left;
     clear: both;
     display: block;
-    padding: 0px 1em 0px 8px;
 }
 .rbttable{
     width: 50%;
@@ -31,4 +30,7 @@
 .chgdpr{
     transform: scale(2);
     margin-left: 10px;
+}
+.rbttable tr td{
+    text-align: right;
 }

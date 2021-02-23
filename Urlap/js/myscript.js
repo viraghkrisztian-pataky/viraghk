@@ -45,13 +45,15 @@ function form() {
                 hobby = "Nincs";
             }
             document.getElementById('er').innerHTML=mail+" "+pass1+" "+pass2+" "+gen+" hobby: "+hobby;
-        }
-
-
-        
+        }        
     }
 }
 
-function gdpr(){
-    var checkBox = document.getElementById("gdpr");
+function gdprell(){
+    var chg = document.getElementById("gdpr");
+    if (chg.checked == true){
+        sbtn.disabled = false;
+    }else{
+        sbtn.disabled = true; 
+    }
 }

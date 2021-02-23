@@ -10,7 +10,7 @@
 <body>
     <div class="col-9 kozepre">
         <h1>Regisztráció</h1>
-        <form action="javascript:form()" name="f1">
+        <form action="javascript:form()" name="f1" id="f1">
             <div class="mb-3">
                 <h2>Belépési adatok</h2>
                 <label for="mail" class="form-label">Email address</label>
@@ -78,16 +78,13 @@
                     <p>
                         A felhasználói feltételeket <a href="#">elolvastam</a> és elfogadom!
                         <label for="gdpr" class=""></label> 
-                        <input type="checkbox" class="chgdpr" id="gdpr" value="1">
+                        <input type="checkbox" class="chgdpr" id="gdpr" value="1" onclick="gdprell()">
                     </p>
                 </div>
 
+                <input type="submit" class="btn btn-success" value="Regisztrálok" id="sbtn" disabled>
+                <input type="reset" class="btn btn-danger" value="Mégse">
 
-
-
-
-
-                <input type="submit" class="btn btn-success" value="Regisztrálok" disabled>
             </div>
               
         </form>
