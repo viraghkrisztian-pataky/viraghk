@@ -17,10 +17,10 @@
                 <input type="email" class="form-control" id="mail" placeholder="name@example.com" required>
                 <br>
                 <label for="jelsz1" class="form-label">password</label>
-                <input type="password" class="form-control" id="jelsz1" placeholder="Your passw0rd">
+                <input type="password" class="form-control" id="jelsz1" placeholder="Your passw0rd" required>
                 <br>
                 <label for="jelsz2" class="form-label">password</label>
-                <input type="password" class="form-control" id="jelsz2" placeholder="Your passw0rd again">
+                <input type="password" class="form-control" id="jelsz2" placeholder="Your passw0rd again" required>
                 <h2>Személyes adatok</h2>
                 <h3>Nemed:</h3>
                 <div class="radio mx-auto">                
@@ -34,11 +34,9 @@
                                 <label for="female" class="form-label rbtlabel">Female</label>
                                 <input type="radio" class="myrbt" id="female" name="gender" value="female" >
                             </td>
-                            <td >
-                                
+                            <td >                                
                                 <label for="csiga" class="form-label rbtlabel">Csiga</label>
                                 <input type="radio" class="myrbt" id="csiga" name="gender" value="csiga" >
-                           
                             </td>
                         </tr>
                     </table>
@@ -51,13 +49,28 @@
                                 <label for="ch1" class="form-label rbtlabel">Futás:</label> 
                                 <input type="checkbox" class="myrbt" id="ch1" value="futas">
                             </td>
-                            <td></td>
-                            <td></td>
+                            <td>
+                                <label for="ch2" class="form-label rbtlabel">Bicikli:</label> 
+                                <input type="checkbox" class="myrbt" id="ch2" value="bicikli">
+                            </td>
+                            <td>
+                                <label for="ch3" class="form-label rbtlabel">Úszás:</label> 
+                                <input type="checkbox" class="myrbt" id="ch3" value="uszas">
+                            </td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td>    </td>
+                            <td>
+                                <label for="ch4" class="form-label rbtlabel">Roller:</label> 
+                                <input type="checkbox" class="myrbt" id="ch4" value="roller">
+                            </td>
+                            <td>
+                                <label for="ch5" class="form-label rbtlabel">Séta:</label> 
+                                <input type="checkbox" class="myrbt" id="ch5" value="seta">
+                            </td>
+                            <td>
+                                <label for="ch6" class="form-label rbtlabel">Csajozás:</label> 
+                                <input type="checkbox" class="myrbt" id="ch6" value="csajozas">
+                            </td>
                         </tr>
                     </table>
                 </div>

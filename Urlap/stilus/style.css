@@ -12,6 +12,7 @@
     clear: none;
     margin: 2px 0 0 2px;
     transform: scale(2);
+    width: 30%;
 }
 .rbtlabel {
     float: left;

@@ -5,16 +5,47 @@ function form() {
     var gen ="";
     var radio = document.querySelectorAll("input[name='gender']");
 
-    for( var i=0;i<radio.length;i++){
-        
-        var x = radio[i].checked;
-        if (x){
-            gen = radio[i].value;
-            break;
+    if(pass1 !== pass2)
+    {
+        alert("Nem egyeznek a jelszavak!");
+    }else{
+
+        for( var i=0;i<radio.length;i++){
+            
+            var x = radio[i].checked;
+            if (x){
+                gen = radio[i].value;
+                break;
+            }
         }
+        if(gen == ""){
+            alert("Kötelező a NEM választása");
+        }else{
+            var hobby = "";
+            if(document.getElementById('ch1').checked){
+                hobby+=document.getElementById('ch1').value+", ";
+            }
+            if(document.getElementById('ch2').checked){
+                hobby+=document.getElementById('ch2').value+", ";
+            }
+            if(document.getElementById('ch3').checked){
+                hobby+=document.getElementById('ch3').value+", ";
+            }
+            if(document.getElementById('ch4').checked){
+                hobby+=document.getElementById('ch4').value+", ";
+            }
+            if(document.getElementById('ch5').checked){
+                hobby+=document.getElementById('ch5').value+", ";
+            }
+            if(document.getElementById('ch6').checked){
+                hobby+=document.getElementById('ch6').value+", ";
+            }
+
+            
+            document.getElementById('er').innerHTML=mail+" "+pass1+" "+pass2+" "+gen+" hobby: "+hobby;
+        }
+
+
+        
     }
-
-
-    
-    document.getElementById('er').innerHTML=mail+" "+pass1+" "+pass2+" "+gen;
 }
