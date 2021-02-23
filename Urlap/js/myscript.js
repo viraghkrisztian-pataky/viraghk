@@ -41,11 +41,17 @@ function form() {
                 hobby+=document.getElementById('ch6').value+", ";
             }
 
-            
+            if(hobby == ""){
+                hobby = "Nincs";
+            }
             document.getElementById('er').innerHTML=mail+" "+pass1+" "+pass2+" "+gen+" hobby: "+hobby;
         }
 
 
         
     }
+}
+
+function gdpr(){
+    var checkBox = document.getElementById("gdpr");
 }

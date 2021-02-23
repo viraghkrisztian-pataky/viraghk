@@ -24,3 +24,11 @@
     width: 50%;
     margin: 0 auto;
 }
+.gdpr{
+    width: 50%;
+    text-align: left;
+}
+.chgdpr{
+    transform: scale(2);
+    margin-left: 10px;
+}
