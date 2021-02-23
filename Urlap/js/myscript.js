@@ -2,7 +2,6 @@ function form() {
     var mail = document.getElementById('mail').value;
     var pass1 = document.getElementById('jelsz1').value;
     var pass2 = document.getElementById('jelsz2').value;
-    var gt=("male","female","csiga");
     var gen ="";
     var radio = document.querySelectorAll("input[name='gender']");
 
