@@ -9,12 +9,15 @@
 <body>
     <h1>Esemény gombnyomásra</h1>
     <div>
-        <img src="pic/pic_bulboff.gif" alt=""><br>
-        <input type="button" onclick="" value="BEKAPCSOLÁS">
-        <input type="button" onclick="" value="KIKAPCSOLÁS">
+        <img src="pic/pic_bulboff.gif" alt="" id="lampa1"><br>
+        <input type="button" onclick="javascript:be()" value="BEKAPCSOLÁS">
+        <input type="button" onclick="ki()" value="KIKAPCSOLÁS">
     </div>
 
-
+    <h1>Képre kattintva</h1>
+    <div>
+        <img src="pic/pic_bulboff.gif" alt="" id="lampa2" onmouseover="obe()" onmouseout="oki()">
+    </div>
 
 
 
