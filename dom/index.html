@@ -14,10 +14,46 @@
         <input type="button" onclick="ki()" value="KIKAPCSOLÁS">
     </div>
 
-    <h1>Képre kattintva</h1>
+    <h1>Képre mutatva</h1>
     <div>
         <img src="pic/pic_bulboff.gif" alt="" id="lampa2" onmouseover="obe()" onmouseout="oki()">
     </div>
+    <h1>Képre kattintva</h1>
+    <div>
+        <img src="pic/pic_bulboff.gif" alt="" id="lampa3" onclick="lampa()">
+    </div>
+
+    <h1>Mit is látok pontosan?</h1>
+    <script>
+		function writeText(txt) {
+			document.getElementById("felirat").innerHTML = txt;
+		}
+	</script>
+	<img width="200" height="400" src="pic/pic_bulboff.gif" usemap="#lampaterkep"/>
+	<map name="lampaterkep">
+		<area shape ="rect" coords ="0,0,80,80"
+		onmouseover="writeText('Ez itt az üveg izzó')"
+		href ="#" target ="_blank" />
+
+		<area shape ="circle" coords ="100,115,15"
+		onmouseover="writeText('Wolfram szál')"
+		href ="#" target ="_blank" />
+
+		<area shape ="rect" coords ="80,200,120,280"
+		onmouseover="writeText('Üvegnyak')" 
+		href ="#" target ="_blank"  /> 
+			
+		<area shape ="rect" coords ="60,290,150,390"
+		onmouseover="writeText('Fém érintkező')"
+		href ="#" target ="_blank" />
+        </map>
+        <p id="felirat">
+	
+            Mozgasd az egeret a lámpa külömböző részein
+        
+    </p>
+    </div>
+
 
 
 
