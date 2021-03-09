@@ -23,6 +23,6 @@ function ki(){
 
   }
 
-  function miez(szoveg){
-    document.getElementById('er').innerHTML=szoveg;
-  }
+function writeText(txt) {
+    document.getElementById("felirat").innerHTML = txt;
+}
