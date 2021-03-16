@@ -8,13 +8,48 @@
     <title>Rendelés</title>
 </head>
 <body>
-    <h1>Árlista</h1>
     <div class="container">
         <div class="row">
-          <div class="col-sm">
-
+          <div class="col-sm zold">
+            <h1>Rendelés</h1>            
           </div>
-        </div>       
+          <div class="col-sm kek">
+            <input type="checkbox" id="felnott" onclick="" value="f"> Nagykorú
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-sm kek">
+                <h2>Italok</h2>
+                <form action="" name="ital">
+                    Sör <input type="number" name="s1" value="0" max="10">db 300Ft/db <br>
+                    Bor <input type="number" name="b1" value="0" max="10">db 400Ft/db <br>
+                    Cola <input type="number" name="c1" value="0" max="10">db 500Ft/db <br>
+                
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm lila">
+                <h2>Hambik</h2>
+                <form action="" name="hambi">
+                    Sima <input type="number" name="h1" value="0" max="10">db 300Ft/db <br>
+                    Sajtos <input type="number" name="h2" value="0" max="10">db 400Ft/db <br>
+                    Dupla Sajtos <input type="number" name="h3" value="0" max="10">db 500Ft/db <br>
+                
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm zold">
+                <h2>Rendelés</h2>
+                <form action="" name="rendeles">
+                    <input type="submit" class="btn btn-success" value="Rendelés">
+                    <input type="reset" class="btn btn-danger" value="Mégse">
+                
+                </form>
+            </div>
+        </div>
+
     </div>
 
     
