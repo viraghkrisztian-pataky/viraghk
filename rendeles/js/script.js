@@ -8,6 +8,9 @@ function felnott(){
   }
 }
 function ital(){
-  var sor = s1.value;
-  document.getElementById('rend').innerHTML=sor*300+" Ft";
+  var sor ="";
+  if(s1.value>0){
+    sor = "sör: "+s1.value*300+" Ft";
+  }
+  document.getElementById('rend').innerHTML=sor;
 }
