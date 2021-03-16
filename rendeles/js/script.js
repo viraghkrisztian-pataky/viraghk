@@ -9,8 +9,10 @@ function felnott(){
 }
 function ital(){
   var sor ="";
-  if(s1.value>0){
-    sor = "sör: "+s1.value*300+" Ft";
+  if(s1.value>0 && document.getElementById('felnott').checked == true){
+    sor = "sör: "+s1.value+" db -> "+s1.value*300+" Ft";
+  }else{
+    sor = "";
   }
   document.getElementById('rend').innerHTML=sor;
 }
