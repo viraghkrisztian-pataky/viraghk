@@ -1,5 +1,6 @@
 var kepcsere = [1, 1, 1, 1, 1, 1, 1];
 var kepszama=0;
+
 function csere(kep){
     if(kep == "h1" ||  kep == "h7") {
         if (kepcsere[0]==1){
@@ -24,7 +25,13 @@ function csere(kep){
                         kepcsere[kepszama-1]=1;
                     }
          }
-
-}
+         var arak = [100, 110, 120, 130, 140, 150, 100];
+         var osszeg=0;
+         for(var i=0;i<7;i++)
+         {
+             osszeg=osszeg+kepcsere[i]*arak[i];
+         }
+         document.getElementById('ar').innerHTML=osszeg+" Ft";
+}       
 
 

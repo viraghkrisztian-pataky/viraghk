@@ -2,4 +2,21 @@
     background-color: rgb(0, 0, 0);
     width: 348px;
     font-size: 0;
+    float: left;
+}
+.osszeg{
+    width: 400px;
+    height: 300px;
+    background-color: cornsilk;
+    float: left;
+    padding: 50px;
+}
+.clear{
+    clear: both;
+}
+.er{
+    font-size: xx-large;
+    color: crimson;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
