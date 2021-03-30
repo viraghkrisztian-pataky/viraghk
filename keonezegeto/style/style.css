@@ -1,4 +1,12 @@
 *{}
+body{
+    padding: 25px;
+    background-color: blanchedalmond;
+}
+h1{
+    font-size: xx-large;
+    text-align: center;
+}
 .tablazat{
     width:80%;
     margin: 20px auto;
@@ -7,9 +15,7 @@ table{
     width: 100%;
 
 }
-table tr td{
-    border: 1px solid black;
-}
+
 .bal,.jobb{
     width: 40px;
 }
