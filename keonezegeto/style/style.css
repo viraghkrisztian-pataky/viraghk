@@ -26,3 +26,19 @@ table tr td{
     width: 50%;
     box-shadow: 5px 5px 10px darkslategrey;
 }
+.belyeg{
+    text-align: center;
+}
+.belyeg img{
+    width: 80px;
+    box-shadow: 5px 5px 10px darkslategrey;
+    border-radius:  20px;
+    margin: 10px 100px;
+
+}
+.imgu{
+    border: 3px solid rgb(6, 2, 250);
+}
+.imge{
+    border: 3px solid rgb(253, 4, 87);
+}
