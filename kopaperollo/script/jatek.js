@@ -15,17 +15,34 @@ function jatek(){
     }
 
     robot=tomb[szam];
-    switch (x) {
-        case "ko":
-          text = "kő";
-          break;
-        case "papir":
-          text = "papír";
-          break;
-        case "ollo":
-          text = "olló";
-          break;
-        default:
-          text = "No value found";
-    document.getElementById('er').innerHTML=vendeg+"+"+robot;
+    if( vendeg == robot){
+        alert("Döntetlen, tessék újra dobni!");
+    }else{
+        switch (vendeg) {
+            case "ko":
+                if(robot=="papir"){
+                    document.getElementById('er').innerHTML="Robot nyert!";
+                }else{
+                    document.getElementById('er').innerHTML="Vendég nyert!";
+                }
+              break;
+            case "papir":
+                if(robot=="ollo"){
+                    document.getElementById('er').innerHTML="Robot nyert!";
+                }else{
+                    document.getElementById('er').innerHTML="Vendég nyert!";
+                }
+              break;
+            case "ollo":
+                if(robot=="ko"){
+                    document.getElementById('er').innerHTML="Robot nyert!";
+                }else{
+                    document.getElementById('er').innerHTML="Vendég nyert!";
+                }
+              break;
+            }
+    }
+    
+          
+    document.getElementById('teszt').innerHTML=vendeg+"+"+robot;
 }
