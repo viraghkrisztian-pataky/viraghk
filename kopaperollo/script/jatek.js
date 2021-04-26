@@ -63,11 +63,17 @@ function jatek(){
     }
     if(ver+rer<3) {
        gomb.disabled=false;
+       ujra.style.display = "none";
     } else{
         gomb.disabled=true;
         gomb.style.backgroundColor="grey";
+        ujra.style.display = "block";
         alert("A "+nyertes+" nyert!");
         
     }
     document.getElementById('teszt').innerHTML=vendeg+"+"+robot;
 }
+
+function refresh(){
+    window.location.reload("Refresh")
+  }

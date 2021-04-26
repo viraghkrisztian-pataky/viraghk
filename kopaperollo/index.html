@@ -15,7 +15,7 @@
             <tr>
                 <td>
                     <img src="pic/ko.png" alt="" class="kep"><br>
-                    kő <input type="radio" id="ko" name="jatekos" value="ko">
+                    kő <input type="radio" id="ko" name="jatekos" value="ko" checked="checked">
                 </td>
                 <td>
                     <img src="pic/papir.png" alt="" class="kep"><br>
@@ -40,6 +40,7 @@
                 <td>
                     <center>
                         <input type="button" name="gomb" id="gomb" class="mehet" value="Játék" onclick="jatek()" disabled>
+                        <input type="button" name="ujra" id="ujra" class="mehet ujra" value="Új játék" onclick="refresh()" >
                     </center>
                 </td>
                 <td class="eredmenyek">
@@ -54,6 +55,7 @@
         <p id="er"></p>
         <p id="teszt"></p>
     </div>
+    <a href="javascript:location.reload(true)">Refresh this page</a>
     <script src="script/jatek.js"></script>
 </body>
 </html>

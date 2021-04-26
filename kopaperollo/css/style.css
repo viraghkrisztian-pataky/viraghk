@@ -1,4 +1,7 @@
 *{}
+body{
+    background-color: aqua;
+}
 h1{
     text-align: center;
 }
@@ -31,13 +34,17 @@ table tr td{
 .mehet{
     
     width: 100%;
-    background-color: cyan;
+    background-color: rgb(88, 236, 75);
     border-radius: 40px;
     margin: 0 auto;
     font-family: fantasy;
-    font-size: 300%;
+    font-size: 200%;
     color: fuchsia;
     text-align: center;
     padding: 1%;
+    display: block;
 
+}
+.ujra{
+    display: none;
 }
